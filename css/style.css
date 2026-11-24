@@ -1,0 +1,688 @@
+/* ============================================================
+   PSWIN INDIA - CLEAN WHITE HIGH-TRUST STEP-BY-STEP FORM PORTAL
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f1f5f9;
+  
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+  
+  --border-light: #e2e8f0;
+  --border-focus: #ff3366;
+  
+  --accent-primary: #ff3366;
+  --accent-primary-hover: #e11d48;
+  --accent-blue: #2563eb;
+  --accent-gold: #d97706;
+  --accent-green: #10b981;
+  --accent-red: #ef4444;
+  
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.06), 0 8px 10px -6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 20px 35px -5px rgba(0,0,0,0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Zero Gap Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid var(--border-light);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.header-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+.brand-badge {
+  background: var(--accent-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+.header-trust-badge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Main Container */
+.main-wrapper {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+  flex: 1;
+}
+
+/* Contest Promo Card */
+.promo-banner {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 580px) {
+  .promo-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px 16px;
+  }
+}
+
+.promo-img-box {
+  width: 100%;
+  max-width: 140px;
+  margin: 0 auto;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.promo-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.promo-tag {
+  display: inline-block;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.promo-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.3;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+.promo-title span {
+  color: var(--accent-primary);
+}
+
+.promo-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.promo-features {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.feature-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Stepper Bar */
+.stepper-nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+.stepper-nav::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: var(--border-light);
+  z-index: 1;
+}
+
+.step-item {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+}
+
+.step-bubble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #cbd5e1;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 auto 6px;
+  transition: all 0.25s ease;
+}
+
+.step-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  transition: color 0.25s ease;
+}
+
+.step-item.active .step-bubble {
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(255, 51, 102, 0.35);
+  transform: scale(1.1);
+}
+
+.step-item.active .step-label {
+  color: var(--accent-primary);
+  font-weight: 700;
+}
+
+.step-item.done .step-bubble {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #ffffff;
+}
+
+.step-item.done .step-label {
+  color: var(--accent-green);
+}
+
+/* Main Form Card */
+.form-card {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 580px) {
+  .form-card {
+    padding: 20px 16px;
+  }
+}
+
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step-heading {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.step-subheading {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+}
+
+/* Form Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-size: 0.95rem;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-input:focus {
+  background: #ffffff;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(255, 51, 102, 0.12);
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 540px) {
+  .form-grid-2, .form-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Primary Button */
+.btn-submit {
+  width: 100%;
+  background: var(--accent-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 20px rgba(255, 51, 102, 0.3);
+  transition: all 0.2s;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background: var(--accent-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(255, 51, 102, 0.4);
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+.btn-prev {
+  background: transparent;
+  color: #64748b;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-prev:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+/* Step 2: Payment Box */
+.qr-card {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.qr-fee-pill {
+  display: inline-block;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.qr-image-wrapper {
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 14px;
+  display: inline-block;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  margin-bottom: 14px;
+}
+
+.qr-image-wrapper img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 8px;
+}
+
+.upi-id-box {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 14px;
+}
+.upi-id-box strong {
+  color: #0f172a;
+  background: #e2e8f0;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.btn-upi-app {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0f172a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.btn-upi-app:hover {
+  background: #1e293b;
+  transform: translateY(-2px);
+}
+
+/* Step 3: Speed Quiz */
+.quiz-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f5f9;
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.quiz-q-num {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.quiz-timer {
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 0.95rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quiz-question-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.quiz-opt-btn {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quiz-opt-btn:hover {
+  background: #ffffff;
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 15px rgba(255, 51, 102, 0.12);
+}
+
+.quiz-opt-btn.correct-ans {
+  background: #ecfdf5 !important;
+  border: 2px solid var(--accent-green) !important;
+  color: #065f46 !important;
+  font-weight: 700 !important;
+}
+
+.quiz-opt-btn.wrong-ans {
+  background: #fef2f2 !important;
+  border: 2px solid var(--accent-red) !important;
+  color: #991b1b !important;
+  text-decoration: line-through;
+}
+
+/* Step 4: Final VIP Ticket */
+.ticket-wrapper {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 22px;
+}
+
+.ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.ticket-pass-badge {
+  background: #f59e0b;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.ticket-ref-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px dashed rgba(255,255,255,0.25);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px 0;
+}
+
+.ticket-ref-code {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f59e0b;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
+
+.notice-banner {
+  background: #fffbeb;
+  border: 1.5px solid #fde68a;
+  border-radius: 14px;
+  padding: 16px 18px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.notice-banner h4 {
+  color: #92400e;
+  font-size: 0.95rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.notice-banner p {
+  color: #78350f;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Track Section */
+.track-section {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 22px;
+  margin-top: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.track-input-wrap {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+@media (max-width: 500px) {
+  .track-input-wrap {
+    flex-direction: column;
+  }
+}
+
+.btn-track {
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-track:hover {
+  background: #1e293b;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border-light);
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: #ffffff;
+}
+.site-footer a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: var(--accent-primary);
+}

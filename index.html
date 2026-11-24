@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PSWIN INDIA • Sony PS5 Pro Speed Quiz Challenge</title>
+  <meta name="description" content="Official 100% Legal Skill-Based Contest. Pay ₹219, solve 5 timed GTA questions & win a brand new Sony PS5 Pro Console. Result: 15 Dec 2026.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Zero Gap Top Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand">
+        <span class="brand-name">PSWIN</span>
+        <span class="brand-badge">ARENA</span>
+      </a>
+      <div class="header-trust-badge">
+        <span>✓</span> 100% Skill Contest
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="main-wrapper">
+
+    <!-- Contest Promo Showcase Card -->
+    <div class="promo-banner">
+      <div class="promo-img-box">
+        <img src="images/ps5_pro_official.jpg" alt="Sony PlayStation 5 Pro Console" loading="eager">
+      </div>
+      <div>
+        <span class="promo-tag">🏆 GRAND TOURNAMENT • RESULT 15 DEC 2026</span>
+        <h1 class="promo-title">Play 5-Question GTA Quiz & <span>Win Sony PS5 Pro</span></h1>
+        <p class="promo-desc">
+          ₹219 Entry Pass • 60-Second Timed Trivia • Highest accuracy & fastest speed claims the Brand New Sealed PlayStation 5 Pro Console!
+        </p>
+        <div class="promo-features">
+          <div class="feature-pill">📦 Free BlueDart Courier</div>
+          <div class="feature-pill">🛡️ 1-Yr Sony Warranty</div>
+          <div class="feature-pill">⚖️ 100% Legal Game of Skill</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4-Step Visual Progress Bar -->
+    <div class="stepper-nav">
+      <div class="step-item active" id="stepInd1">
+        <div class="step-bubble">1</div>
+        <div class="step-label">Details</div>
+      </div>
+      <div class="step-item" id="stepInd2">
+        <div class="step-bubble">2</div>
+        <div class="step-label">Payment</div>
+      </div>
+      <div class="step-item" id="stepInd3">
+        <div class="step-bubble">3</div>
+        <div class="step-label">Speed Quiz</div>
+      </div>
+      <div class="step-item" id="stepInd4">
+        <div class="step-bubble">4</div>
+        <div class="step-label">VIP Pass</div>
+      </div>
+    </div>
+
+    <!-- Form Container -->
+    <div class="form-card" id="formCard">
+
+      <!-- STEP 1: Participant Details & Shipping Address (All in One Clear Step) -->
+      <div class="form-step active" id="stepSection1">
+        <h2 class="step-heading">Step 1: Your Details & Courier Address</h2>
+        <p class="step-subheading">Enter your shipping information so the console can be delivered to your doorstep upon winning.</p>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" id="inputName" class="form-input" placeholder="e.g. Aman Sharma" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">WhatsApp Mobile Number *</label>
+            <input type="tel" id="inputPhone" class="form-input" placeholder="e.g. 9876543210" maxlength="10" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Flat / House No. / Building / Street Address *</label>
+          <input type="text" id="inputAddress" class="form-input" placeholder="e.g. Flat 402, Royal Residency, Connaught Place" required>
+        </div>
+
+        <div class="form-grid-3">
+          <div class="form-group">
+            <label class="form-label">City *</label>
+            <input type="text" id="inputCity" class="form-input" placeholder="e.g. New Delhi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">State *</label>
+            <input type="text" id="inputState" class="form-input" placeholder="e.g. Delhi" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Pincode *</label>
+            <input type="text" id="inputPincode" class="form-input" placeholder="e.g. 110001" maxlength="6" required>
+          </div>
+        </div>
+
+        <button type="button" class="btn-submit" onclick="goToStep(2)">
+          CONTINUE TO PAYMENT (₹219) ➔
+        </button>
+      </div>
+
+      <!-- STEP 2: Pay ₹219 with Clean Bank QR & Enter UTR -->
+      <div class="form-step" id="stepSection2">
+        <h2 class="step-heading">Step 2: Pay Entry Pass Fee (₹219)</h2>
+        <p class="step-subheading">Scan the official QR code using GPay, PhonePe, Paytm or any UPI app, then enter the 12-digit UTR number.</p>
+
+        <div class="qr-card">
+          <div class="qr-fee-pill">ENTRY PASS FEE: ₹219 ONLY</div>
+          
+          <div class="qr-image-wrapper">
+            <img src="images/clean_qr_white.png" alt="Scan to Pay ₹219 via UPI">
+          </div>
+
+          <div class="upi-id-box">
+            UPI ID: <strong>9592381735@fam</strong>
+          </div>
+
+          <div>
+            <a href="upi://pay?pa=9592381735@fam&pn=PSWIN%20Arena&am=219&cu=INR&tn=PS5%20Tournament%20Pass" class="btn-upi-app">
+              ⚡ Open in Any UPI App
+            </a>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">12-Digit UPI Reference / UTR Number *</label>
+          <input type="text" id="inputUTR" class="form-input" placeholder="Enter 12-digit UTR (e.g. 432190123890)" maxlength="16" required>
+          <small style="color: #64748b; font-size: 0.78rem; display: block; margin-top: 4px;">You will find this in your payment receipt after paying ₹219.</small>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 18px;">
+          <button type="button" class="btn-prev" onclick="goToStep(1)">← Back</button>
+          <button type="button" class="btn-submit" style="margin-top: 0; flex: 1;" onclick="goToStep(3)">
+            VERIFY & START SPEED QUIZ ➔
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3: 5-Question GTA Speed Quiz -->
+      <div class="form-step" id="stepSection3">
+        <div class="quiz-top-bar">
+          <span class="quiz-q-num" id="quizQNum">Question 1 of 5</span>
+          <div class="quiz-timer">
+            <span>⏱️</span> <strong id="quizTimerSec">15s</strong>
+          </div>
+        </div>
+
+        <h3 class="quiz-question-text" id="quizQText">Loading question...</h3>
+        <div class="quiz-options" id="quizOptionsContainer"></div>
+
+        <p style="font-size: 0.82rem; color: #64748b; text-align: center;">Click any option to answer. Faster answers score higher ranking!</p>
+      </div>
+
+      <!-- STEP 4: VIP Ticket Pass & Confirmation -->
+      <div class="form-step" id="stepSection4">
+        <div class="ticket-wrapper">
+          <div class="ticket-top">
+            <span class="ticket-pass-badge" id="ticketPassNo">#VIP-0745</span>
+            <span style="color: #10b981; font-weight: 700; font-size: 0.85rem;">✓ PAYMENT & ENTRY VERIFIED</span>
+          </div>
+
+          <h2 style="font-size: 1.6rem; margin-bottom: 4px;" id="ticketPassName">Participant Name</h2>
+          <p style="color: #94a3b8; font-size: 0.88rem;">
+            City: <span id="ticketPassCity">New Delhi</span> | Score: <strong id="ticketPassScore" style="color: #f59e0b;">5/5</strong>
+          </p>
+
+          <div class="ticket-ref-box">
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: #94a3b8; margin-bottom: 4px;">YOUR UNIQUE REFERENCE CODE</div>
+            <div class="ticket-ref-code" id="ticketPassRef">GTA6-PS5-XXXXXX</div>
+          </div>
+
+          <div style="font-size: 0.82rem; color: #94a3b8;">
+            Grand Finale Declaration: <strong>15 December 2026</strong>
+          </div>
+        </div>
+
+        <div class="notice-banner">
+          <h4>⏳ Verification in Progress</h4>
+          <p>
+            Aapka quiz score aur payment details submit ho chuke hain. <strong>Leaderboard 30 minutes me refresh ho jayega</strong>, aap neeche Reference Code daal kar apna updated status dekh sakte hain!
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button type="button" class="btn-submit" id="btnCopyRef" style="flex: 1; margin-top: 0; background: #0f172a;">
+            📋 COPY REFERENCE CODE
+          </button>
+          <button type="button" class="btn-submit" id="btnPrintPass" style="flex: 1; margin-top: 0; background: var(--accent-blue);">
+            🖨️ DOWNLOAD PASS
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quick Track Section -->
+    <div class="track-section">
+      <h3 style="font-size: 1.05rem; font-weight: 800; color: #0f172a;">🔍 Track Your Existing Registration</h3>
+      <p style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">Enter your 10-digit mobile number or Reference Code to check your verified status.</p>
+      
+      <div class="track-input-wrap">
+        <input type="text" id="trackInput" class="form-input" placeholder="e.g. GTA6-PS5-XXXXXX or 9876543210" style="margin-bottom: 0;">
+        <button type="button" class="btn-track" id="btnTrackSearch">TRACK STATUS</button>
+      </div>
+
+      <div id="trackResultCard" style="display: none; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px; margin-top: 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px;">
+          <strong id="trackResId" style="color: var(--accent-primary); font-family: monospace; font-size: 1.05rem;">-</strong>
+          <span id="trackResTicket" style="background: #dcfce7; color: #166534; font-size: 0.75rem; font-weight: 800; padding: 3px 10px; border-radius: 12px;">#VIP-0000</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.85rem;">
+          <div>Name: <strong id="trackResName">-</strong></div>
+          <div>Mobile: <strong id="trackResPhone">-</strong></div>
+          <div>City: <strong id="trackResCity">-</strong></div>
+          <div>Score: <strong id="trackResScore" style="color: var(--accent-gold);">-</strong></div>
+        </div>
+        <div style="margin-top: 10px; font-size: 0.8rem; color: #166534; font-weight: 600;">
+          ✅ Payment Status: Verified & Slot Locked
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Clean Footer -->
+  <footer class="site-footer">
+    <p>© 2026 PSWIN INDIA. All Rights Reserved. Pan-India Insured Doorstep Delivery.</p>
+    <p style="margin-top: 6px;"><a href="/admin">🔒 Admin Dashboard</a></p>
+  </footer>
+
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
